@@ -1,0 +1,582 @@
+/* Tema por defecto (claro) */
+:root {
+    --bg-color: #f0f0f0;
+    --header-bg-color: #fff;
+    --header-border-color: #ddd;
+    --primary-color: #2c79ff;
+    --primary-hover-color: #1d70ff;
+    --text-color: #151515;
+    --secondary-color: #f9f9f9;
+    --off-btn-bg-color: #E3E3E3;
+    --off-btn-hover-color: #cfcfcf;
+    --footer-bg-color: #f1f1f1;
+    --footer-link-color: #2c79ff;
+    --footer-link-hover-color: #1d70ff;
+    --white-color: #fff; /* Agregando una variable para el color blanco */
+    --panel-color: #fff; /* Agregando una variable para el color blanco */
+    --search-color: #E3E3E3;
+}
+
+/* Tema oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1D1F22;
+        --header-bg-color: #1D1F22;
+        --header-border-color: #2C3036;
+        --text-color: #ffffff;
+        --secondary-color: #17191C;
+        --off-btn-bg-color: #212326;
+        --off-btn-hover-color: #2C3036;
+        --footer-bg-color: #17191C;
+        --white-color: #ffffff;
+        --panel-color: #17191C;
+        --search-color: #17191C;
+
+    }
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    font-weight: bold;
+    color: var(--text-color); /* Aplicando variable para el color del texto */
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3141592654; /* Asegura que esté por encima del contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--header-bg-color);
+    border-bottom: 2px solid var(--header-border-color);
+}
+
+
+header .logo img {
+    width: 50px;}
+
+.search-container {
+    position: relative;
+    width: 400px; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    padding-left: 40px; /* Espacio para el icono de búsqueda */
+    padding-right: 30px; /* Espacio para el icono de "x" */
+    width: calc(100% - 60px); /* Ajusta el ancho del input */
+    border: none;
+    border-radius: 17px;
+    height: 25px;
+    font-weight: bold;
+    background-color: var(--search-color); /* Color de fondo */
+    color: var(--text-color); /* Color del texto */
+}
+
+.search-container i.fa-search {
+    position: absolute;
+    left: 10px; /* Posición a la izquierda */
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-color); /* Color del icono de búsqueda */
+}
+
+.search-container i.fa-times-circle {
+    position: absolute;
+    right: 1px; /* Posición a la derecha */
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-color); /* Color inicial del icono */
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s; /* Transición para suavizar el cambio de color */
+    padding: 5px; /* Aumenta el espacio alrededor del icono */
+    border-radius: 50%; /* Hace que el fondo sea circular */
+    background-color: transparent; /* Fondo transparente inicial */
+}
+
+.search-container i.fa-times-circle:hover {
+    color: rgb(255, 0, 75); /* Color rojo al hacer hover */
+    background-color: rgba(255, 0, 75, 0.2); /* Fondo rojo ligeramente visible */
+}
+
+
+/* Efecto de clic para el segundo botón */
+header nav .header-btn {
+    position: relative;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--white-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    border: none;
+  }
+  
+  
+  header nav .header-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px, var(--primary-color) 0px 0px 0px 6px;
+    /* Ajusta los valores según sea necesario */
+  }
+  
+  header nav .header-btn:active:after {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 15px, rgba(var(--primary-color), 0.5) 0px 0px 0px 3px;
+    opacity: 1;
+    transition: 0s;
+    /* Ajusta los valores según sea necesario */
+  }
+  
+  
+  header nav .header-btn:active {
+    transform: translateY(1px); /* Efecto de levantamiento */
+  }
+  
+
+header nav .header-btn:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.02); /* Scale up slightly on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-panel, .cart-panel {
+    flex: 1;
+    background-color: var(--panel-color); /* Utilizando la variable para el color blanco */
+    padding: 20px;
+    border: 2px solid var(--header-border-color);
+    border-radius: 15px;
+}
+
+.product-panel h2, .cart-panel h2 {
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--white-color); /* Utilizando la variable para el color blanco */
+    border: 2px solid var(--header-border-color);
+    border-radius: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative; /* Asegura que el pseudo-elemento :after esté posicionado correctamente */
+}
+
+.category-btn:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.02); /* Scale up slightly on hover */
+}
+
+.category-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 15px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px, var(--primary-color) 0px 0px 0px 8px;
+    /* Ajusta los valores según sea necesario */
+}
+
+.category-btn:active:after {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 15px, rgba(var(--primary-color), 0.5) 0px 0px 0px 3px;
+    opacity: 1;
+    transition: 0s;
+    /* Ajusta los valores según sea necesario */
+}
+
+.category-btn:active {
+    transform: translateY(1px); /* Efecto de levantamiento */
+}
+
+
+.products {
+    display: none;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.products.open {
+    display: block;
+}
+
+.products .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid var(--header-border-color);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.products.open .product:hover {
+    transform: translateY(-5px);
+    opacity: 0.9;
+}
+
+
+.products .product img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--header-border-color);
+
+}
+
+.products .product p {
+    margin: 0;
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 250px;
+}
+
+.products .product span {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--header-border-color);
+}
+
+.cart-item p {
+    margin: 0;
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.cart-summary button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color); /* Utilizando la variable para el color blanco */
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s ease; /* Aplica la transición para ambos estados */
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative; /* Asegura que el pseudo-elemento :after esté posicionado correctamente */
+}
+
+.cart-summary button:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.02); /* Scale up slightly on hover */
+}
+
+.cart-summary button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px, var(--primary-color) 0px 0px 0px 6px;
+    /* Ajusta los valores según sea necesario */
+}
+
+.cart-summary button:active:after {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 15px, rgba(var(--primary-color), 0.5) 0px 0px 0px 3px;
+    opacity: 1;
+    transition: 0s;
+    /* Ajusta los valores según sea necesario */
+}
+
+.cart-summary button:active {
+    transform: translateY(1px); /* Efecto de levantamiento */
+}
+
+
+.cart-summary #checkout {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s ease; /* Transiciones para color de fondo y transformación */
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative; /* Necesario para el efecto de flecha */
+    overflow: hidden; /* Necesario para el efecto de flecha */
+}
+
+.cart-summary #checkout:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.02); /* Scale up slightly on hover */
+}
+
+.cart-summary #checkout span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.cart-summary #checkout span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.cart-summary #checkout:hover span {
+    padding-right: 25px;
+}
+
+.cart-summary #checkout:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* Estilos generales del footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+
+}
+
+/* Estilo para el bloque de navegación dentro del footer */
+footer nav {
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+/* Estilo para los enlaces dentro del footer */
+footer a {
+    margin: 0 10px;
+    color: var(--footer-link-color);
+    text-decoration: none;
+}
+
+/* Estilo para los enlaces cuando se hace hover */
+footer a:hover {
+    text-decoration: underline;
+    color: var(--footer-link-hover-color);
+}
+
+/* Estilo para los párrafos dentro del footer */
+footer p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    padding: 10px 20px;
+    background-color: var(--panel-color);
+    color: var(--text-color); /* Utilizando la variable para el color del texto */
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.2s ease; /* Aplica la transición para ambos estados */
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative; /* Asegura que el pseudo-elemento :after esté posicionado correctamente */
+}
+
+.pagination-btn:hover {
+    background-color: var(--bg-color);
+}
+
+.pagination-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px, var(--off-btn-hover-color) 0px 0px 0px 6px;
+    /* Ajusta los valores según sea necesario */
+}
+
+.pagination-btn:active:after {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 15px, rgba(var(--off-btn-hover-color), 0.5) 0px 0px 0px 3px;
+    opacity: 1;
+    transition: 0s;
+    /* Ajusta los valores según sea necesario */
+}
+
+.pagination-btn:active {
+    transform: translateY(1px); /* Efecto de levantamiento */
+}
+
+header nav .off-btn {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: var(--off-btn-bg-color);
+    color: var(--text-color); /* Utilizando la variable para el color del texto */
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s ease; /* Aplica la transición para ambos estados */
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    position: relative; /* Asegura que el pseudo-elemento :after esté posicionado correctamente */
+}
+
+header nav .off-btn:hover {
+    background-color: var(--off-btn-hover-color);
+    transform: scale(1.02); /* Scale up slightly on hover */
+}
+
+header nav .off-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px, var(--off-btn-hover-color) 0px 0px 0px 6px;
+    /* Ajusta los valores según sea necesario */
+}
+
+header nav .off-btn:active:after {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 15px, rgba(var(--off-btn-hover-color), 0.8) 0px 0px 0px 3px;
+    opacity: 1;
+    transition: 0s;
+    /* Ajusta los valores según sea necesario */
+}
+
+header nav .off-btn:active {
+    transform: translateY(1px); /* Efecto de levantamiento */
+}
+
+
+.products {
+    display: block;
+    margin-top: 10px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.products.open {
+    max-height: 1000px; /* A large enough value to accommodate the products */
+    opacity: 1;
+}
+
+.products .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid var(--header-border-color);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.products.open .product {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.header-placeholder {
+    height: 0px; /* Ajusta según el tamaño del header */
+    /* background-color: transparent; */ /* Opcional: puedes usar este color si quieres un fondo transparente */
+}
+
+
+
+
