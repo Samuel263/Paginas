@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 5.99, image: 'assets/images/image3.jpg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] }
         ],
         'agendamientoweb': [
-            { id: 'FR-100-COR', name: 'Ferrero Rocher 100g Corazón', price: 2.99, image: 'assets/images/image4.jpg', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
-            { id: 'CHOC-CBCL-120', name: 'Chocolate Bombones Cerezas al Licor, 120g', price: 3.99, image: 'assets/images/image5.jpg', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] }
+            { id: 'FR-100-COR', name: 'Botón de Whatsapp Flotante con Mensaje Personalizado de Empresa', price: 2.99, image: 'assets/images/image4.jpg', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
+            { id: 'CHOC-CBCL-120', name: 'Chatbot con Inteligencia Artificial Interacción con Clientes 10 Preguntas', price: 3.99, image: 'assets/images/image5.jpg', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] }
         ],
         'plataformaagil': [
             { id: 'PEL-OSO-V', name: 'Peluche Oso Vainilla', price: 9.99, image: 'assets/images/image6.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
