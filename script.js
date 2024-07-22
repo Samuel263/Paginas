@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = {
         'website': [
-            { id: 'RC30R-ROS', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio', price: 5.99, image: 'assets/images/image1.jpg', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
+            { id: 'RC30R-ROS', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio + Dominio(www.name.cl) + Hosting Anual', price: 5.99, image: 'assets/images/image1.jpg', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
             { id: 'ACC6R-6G-HIP', name: 'Arreglo Canasta con 6 Rosas, 6 Girasoles e Hiperycum', price: 5.99, image: 'assets/images/image2.jpg', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
             { id: 'ACC-6R-GER-FLO', name: 'Arreglo Canasta Con 6 Rosas, Gerberas y Flores', price: 5.99, image: 'assets/images/image3.jpg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] }
         ],
