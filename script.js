@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 'CHOC-CBCL-120', name: 'Chatbot con Inteligencia Artificial Interacción con Clientes 10 Preguntas', price: 3.99, image: 'assets/images/image5.jpg', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] }
         ],
         'plataformaagil': [
-            { id: 'PEL-OSO-V', name: 'Peluche Oso Vainilla', price: 9.99, image: 'assets/images/image6.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
+            { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 9.99, image: 'assets/images/image6.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
             { id: 'PEL-OSO-AM', name: 'Peluche Oso Amor', price: 12.99, image: 'assets/images/image7.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
         ]
     };
