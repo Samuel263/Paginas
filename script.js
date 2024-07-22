@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 129.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
             { id: 'PEL-OSO-AM', name: 'Barra Buscador en Categorías y Tags', price: 49.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
             { id: 'PEL-OSO-OD', name: 'Barra Buscador con Inteligencia Artificial Algoritmo de Recomendación', price: 219.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
-            { id: 'PEL-OSO-OS', name: 'Soporte y Mantenimiento Mensual', price: 219.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
+            { id: 'PEL-OSO-OS', name: 'Soporte y Mantenimiento Mensual', price: 35.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
 
         ],
         'agendamientoweb': [
