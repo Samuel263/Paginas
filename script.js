@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = {
-        'rosas': [
+        'website': [
             { id: 'RC30R-ROS', name: 'Ramo Con 30 Rosas En Sobre Rosatel', price: 5.99, image: 'assets/images/image1.jpg', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
             { id: 'ACC6R-6G-HIP', name: 'Arreglo Canasta con 6 Rosas, 6 Girasoles e Hiperycum', price: 5.99, image: 'assets/images/image2.jpg', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
             { id: 'ACC-6R-GER-FLO', name: 'Arreglo Canasta Con 6 Rosas, Gerberas y Flores', price: 5.99, image: 'assets/images/image3.jpg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] }
         ],
-        'chocolates': [
+        'agendamientoweb': [
             { id: 'FR-100-COR', name: 'Ferrero Rocher 100g Corazón', price: 2.99, image: 'assets/images/image4.jpg', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
             { id: 'CHOC-CBCL-120', name: 'Chocolate Bombones Cerezas al Licor, 120g', price: 3.99, image: 'assets/images/image5.jpg', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] }
         ],
-        'peluches': [
+        'plataformaagil': [
             { id: 'PEL-OSO-V', name: 'Peluche Oso Vainilla', price: 9.99, image: 'assets/images/image6.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
             { id: 'PEL-OSO-AM', name: 'Peluche Oso Amor', price: 12.99, image: 'assets/images/image7.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
         ]
