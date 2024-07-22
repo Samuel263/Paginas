@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = {
         'website': [
-            { id: 'RC30R-ROS', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio + Dominio(www.name.cl) + Hosting Anual en 48 Horas', price: 5.99, image: 'assets/images/image1.jpg', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
+            { id: 'RC30R-ROS', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio + Dominio(www.name.cl) + Hosting Anual en 48 Horas', price: 159.00, image: 'assets/images/image1.jpg', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
             { id: 'ACC6R-6G-HIP', name: 'Arreglo Canasta con 6 Rosas, 6 Girasoles e Hiperycum', price: 5.99, image: 'assets/images/image2.jpg', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
-            { id: 'ACC-6R-GER-FLO', name: 'Arreglo Canasta Con 6 Rosas, Gerberas y Flores', price: 159.00, image: 'assets/images/image3.jpg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] }
+            { id: 'ACC-6R-GER-FLO', name: 'Arreglo Canasta Con 6 Rosas, Gerberas y Flores', price: 5.99, image: 'assets/images/image3.jpg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] }
         ],
         'agendamientoweb': [
             { id: 'FR-100-COR', name: 'Ferrero Rocher 100g Corazón', price: 2.99, image: 'assets/images/image4.jpg', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Configuración de la conversión de moneda
     const currencyConfig = {
         currencyCode: 'CLP', // Código de la moneda de destino
-        exchangeRate: 800, // Tasa de cambio (1 USD a 'exchangeRate' unidades de la moneda de destino)
+        exchangeRate: 942, // Tasa de cambio (1 USD a 'exchangeRate' unidades de la moneda de destino)
         symbol: '$' // Símbolo de la moneda de destino
     };
 
