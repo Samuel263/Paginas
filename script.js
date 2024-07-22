@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         'plataformaagil': [
             { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 9.99, image: 'assets/images/image6.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
-            { id: 'PEL-OSO-AM', name: 'Peluche Oso Amor', price: 12.99, image: 'assets/images/image7.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
+            { id: 'PEL-OSO-AM', name: 'Barra Buscador en Categorías y Tags', price: 12.99, image: 'assets/images/image7.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
+            { id: 'PEL-OSO-OD', name: 'Barra Buscador con Inteligencia Artificial Algoritmo de Recomendación', price: 12.99, image: 'assets/images/image7.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
+
         ]
     };
 
