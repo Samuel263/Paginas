@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Configuración de la conversión de moneda
     const currencyConfig = {
         currencyCode: 'CLP', // Código de la moneda de destino
-        exchangeRate: 942, // Tasa de cambio (1 USD a 'exchangeRate' unidades de la moneda de destino)
+        exchangeRate: 1000, // Tasa de cambio (1 USD a 'exchangeRate' unidades de la moneda de destino)
         symbol: '$' // Símbolo de la moneda de destino
     };
 
