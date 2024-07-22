@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 29.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] },
              { id: 'FR-100-COR', name: 'Botón de Whatsapp Flotante con Mensaje Personalizado de Empresa', price: 19.99, image: 'assets/images/image1.jpg', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
             { id: 'CHOC-CBCL-120', name: 'Chatbot con Inteligencia Artificial Interacción con Clientes 10 Preguntas', price: 49.99, image: 'assets/images/image1.jpg', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] },
-               { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 9.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
+               { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 89.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
             { id: 'PEL-OSO-AM', name: 'Barra Buscador en Categorías y Tags', price: 12.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
             { id: 'PEL-OSO-OD', name: 'Barra Buscador con Inteligencia Artificial Algoritmo de Recomendación', price: 12.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
         ],
