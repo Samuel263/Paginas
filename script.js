@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = {
         'website': [
-            { id: 'PW', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio + Dominio(www.name.cl) + Hosting Anual en 48 Horas', price: 149.99, image: 'assets/images/place.svg', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
-            { id: 'ACC6R-6G-HIP', name: '"Registro de Usuarios" Login y Acceso con Google', price: 39.99, image: 'assets/images/place.svg', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
-            { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 49.99, image: 'assets/images/place.svg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] },
-             { id: 'FR-100-COR', name: 'Botón de Whatsapp Flotante con Mensaje Personalizado de Empresa', price: 39.99, image: 'assets/images/place.svg', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
-            { id: 'CHOC-CBCL-120', name: 'Chatbot con Inteligencia Artificial Interacción con Clientes 10 Preguntas', price: 69.99, image: 'assets/images/place.svg', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] },
-               { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 129.99, image: 'assets/images/place.svg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
-            { id: 'PEL-OSO-AM', name: 'Barra Buscador en Categorías y Tags', price: 49.99, image: 'assets/images/place.svg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
-            { id: 'PEL-OSO-OD', name: 'Barra Buscador con Inteligencia Artificial Algoritmo de Recomendación', price: 219.99, image: 'assets/images/place.svg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
-            { id: 'PEL-OSO-OS', name: 'Soporte y Mantenimiento Mensual', price: 35.99, image: 'assets/images/place.svg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
+            { id: 'PW', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio + Dominio(www.name.cl) + Hosting Anual en 48 Horas', price: 149.99, image: 'assets/images/1.png', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
+            { id: 'ACC6R-6G-HIP', name: '"Registro de Usuarios" Login y Acceso con Google', price: 39.99, image: 'assets/images/2.png', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
+            { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 49.99, image: 'assets/images/3.png', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] },
+             { id: 'FR-100-COR', name: 'Botón de Whatsapp Flotante con Mensaje Personalizado de Empresa', price: 39.99, image: 'assets/images/4.png', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
+            { id: 'CHOC-CBCL-120', name: 'Chatbot con Inteligencia Artificial Interacción con Clientes 10 Preguntas', price: 69.99, image: 'assets/images/5.png', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] },
+               { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 129.99, image: 'assets/images/6.png', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
+            { id: 'PEL-OSO-AM', name: 'Barra Buscador en Categorías y Tags', price: 49.99, image: 'assets/images/7.png', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
+            { id: 'PEL-OSO-OD', name: 'Barra Buscador con Inteligencia Artificial Algoritmo de Recomendación', price: 219.99, image: 'assets/images/8.png', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
+            { id: 'PEL-OSO-OS', name: 'Soporte y Mantenimiento Mensual', price: 35.99, image: 'assets/images/9.png', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
 
         ],
         'agendamientoweb': [
