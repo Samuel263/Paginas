@@ -1,25 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = {
         'website': [
-            { id: 'PW', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio + Dominio(www.name.cl) + Hosting Anual en 48 Horas', price: 149.99, image: 'assets/images/image1.jpg', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
-            { id: 'ACC6R-6G-HIP', name: '"Registro de Usuarios" Login y Acceso con Google', price: 39.99, image: 'assets/images/image1.jpg', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
-            { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 49.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] },
-             { id: 'FR-100-COR', name: 'Botón de Whatsapp Flotante con Mensaje Personalizado de Empresa', price: 39.99, image: 'assets/images/image1.jpg', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
-            { id: 'CHOC-CBCL-120', name: 'Chatbot con Inteligencia Artificial Interacción con Clientes 10 Preguntas', price: 69.99, image: 'assets/images/image1.jpg', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] },
-               { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 129.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
-            { id: 'PEL-OSO-AM', name: 'Barra Buscador en Categorías y Tags', price: 49.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
-            { id: 'PEL-OSO-OD', name: 'Barra Buscador con Inteligencia Artificial Algoritmo de Recomendación', price: 219.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
-            { id: 'PEL-OSO-OS', name: 'Soporte y Mantenimiento Mensual', price: 35.99, image: 'assets/images/image1.jpg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
+            { id: 'PW', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio + Dominio(www.name.cl) + Hosting Anual en 48 Horas', price: 149.99, image: 'assets/images/place.svg', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
+            { id: 'ACC6R-6G-HIP', name: '"Registro de Usuarios" Login y Acceso con Google', price: 39.99, image: 'assets/images/place.svg', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
+            { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 49.99, image: 'assets/images/place.svg', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] },
+             { id: 'FR-100-COR', name: 'Botón de Whatsapp Flotante con Mensaje Personalizado de Empresa', price: 39.99, image: 'assets/images/place.svg', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
+            { id: 'CHOC-CBCL-120', name: 'Chatbot con Inteligencia Artificial Interacción con Clientes 10 Preguntas', price: 69.99, image: 'assets/images/place.svg', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] },
+               { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 129.99, image: 'assets/images/place.svg', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
+            { id: 'PEL-OSO-AM', name: 'Barra Buscador en Categorías y Tags', price: 49.99, image: 'assets/images/place.svg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
+            { id: 'PEL-OSO-OD', name: 'Barra Buscador con Inteligencia Artificial Algoritmo de Recomendación', price: 219.99, image: 'assets/images/place.svg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] },
+            { id: 'PEL-OSO-OS', name: 'Soporte y Mantenimiento Mensual', price: 35.99, image: 'assets/images/place.svg', tags: ['blanco', 'felpa', 'grande', 'toy', 'juguete'] }
 
         ],
         'agendamientoweb': [
-         
+          
         ],
         'plataformaagil': [
-        
-        ],
-          'diseñandotupropuestadevalor': [
-        
+         
         ]
     };
 
@@ -27,7 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const currencyConfig = {
         currencyCode: 'CLP', // Código de la moneda de destino
         exchangeRate: 1000, // Tasa de cambio (1 USD a 'exchangeRate' unidades de la moneda de destino)
-        symbol: '$ ' // Símbolo de la moneda de destino
+        symbol: '$', // Símbolo de la moneda de destino
+        format: new Intl.NumberFormat('es-CL', {
+            style: 'currency',
+            currency: 'CLP',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+        }) // Formato para pesos chilenos
     };
 
     let cart = [];
@@ -44,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         productsContainer.classList.add('open');
         button.addEventListener('click', () => {
             productsContainer.classList.toggle('open');
-            button.innerHTML = productsContainer.classList.contains('open') ? `Hide ${capitalizeFirstLetter(category)}` : capitalizeFirstLetter(category);
+            // button.innerHTML = productsContainer.classList.contains('open') ? `Hide ${capitalizeFirstLetter(category)}` : capitalizeFirstLetter(category);
         });
     });
 
@@ -70,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             productDiv.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <p>${product.name}</p>
-                <span>${currencyConfig.symbol}${priceCurrency.toFixed(2)} ${currencyConfig.currencyCode}</span>
+                <span>${currencyConfig.format.format(priceCurrency)} ${currencyConfig.currencyCode}</span>
             `;
             productDiv.addEventListener('click', () => {
                 addToCart(product);
@@ -94,12 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const cartItem = document.createElement('div');
             cartItem.classList.add('cart-item');
             cartItem.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" class="cart-item-image">
                 <p>${product.name}</p>
-                <span>${currencyConfig.symbol}${priceCurrency.toFixed(2)} ${currencyConfig.currencyCode}</span>
+                <span>${currencyConfig.format.format(priceCurrency)} ${currencyConfig.currencyCode}</span>
             `;
             cartItems.appendChild(cartItem);
         });
-        totalPrice.innerText = `${currencyConfig.symbol}${total.toFixed(2)} ${currencyConfig.currencyCode}`;
+        totalPrice.innerText = `${currencyConfig.format.format(total)} ${currencyConfig.currencyCode}`;
     }
 
     document.getElementById('clear-cart').addEventListener('click', () => {
@@ -133,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
             productsContainer.style.display = showCategory ? 'block' : 'none';
             if (showCategory) {
                 productsContainer.classList.add('open');
-                button.innerHTML = `Hide ${capitalizeFirstLetter(category)}`;
+                // button.innerHTML = `Hide ${capitalizeFirstLetter(category)}`;
             } else {
                 productsContainer.classList.remove('open');
                 button.innerHTML = capitalizeFirstLetter(category);
@@ -168,11 +172,3 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }
 });
-
-
-
-
-
-
-
-
