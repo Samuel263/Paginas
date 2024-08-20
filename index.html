@@ -6,24 +6,16 @@
     <title>E-commerce Interface</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="assets/images/logo.svg" alt="logo">
-          </div>
-          <div class="search-container">
+        </div>
+        <div class="search-container">
             <i class="fas fa-search"></i>
             <input type="text" id="search-bar" placeholder="¿Qué tienes en mente?">
             <i class="fas fa-times-circle" id="clear-search" style="display: none;"></i>
-        </div>
-        
-        
-        </div>
-        
-        </div>
-        
         </div>
         <nav>
             <button class="header-btn">Arma tu pedido</button>
@@ -46,8 +38,8 @@
                 <div class="products" id="agendamientoweb"></div>
             </div>
             <div class="category">
-                <button class="category-btn" data-category="plaformaagil">Plataforma Ágil</button>
-                <div class="products" id="plaformaagil"></div>
+                <button class="category-btn" data-category="plataformaagil">Plataforma Ágil</button>
+                <div class="products" id="plataformaagil"></div>
             </div>
             <div class="pagination">
                 <button class="pagination-btn">Previous</button>
@@ -58,16 +50,16 @@
         <section class="cart-panel">
             <h2>Detalles de tu pedido</h2>
             <div id="cart-items">
-                
                 <!-- Cart items will be dynamically inserted here -->
             </div>
             <div class="cart-summary">
                 <button id="clear-cart">Borrar Pedido</button>
                 <div>SUBTOTAL: <span id="total-price">$0 CLP</span></div>
-                <button id="checkout" class="button"><span>Reservar</span></button>            </div>
+                <button id="checkout" class="button"><span>Reservar</span></button>
+            </div>
         </section>
     </main>
-    
+
     <footer>
         <nav>
             <a href="#">Términos de uso</a>
@@ -76,9 +68,8 @@
         </nav>
         <p>&copy; 2024 LeanXMeta. Todos los derechos reservados.</p>
     </footer>
-    
+
     <script src="script.js"></script>
     <script src="theme.js"></script>
-
 </body>
 </html>
