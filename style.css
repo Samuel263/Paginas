@@ -302,7 +302,7 @@ main {
 }
 
 .products .product span {
-    color: var(--primary-color);
+    color: var(--text-color);
     font-size: 1.1rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins */
