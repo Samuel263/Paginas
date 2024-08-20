@@ -6,15 +6,15 @@
     --bg-color: #f0f0f0;
     --header-bg-color: #fff;
     --header-border-color: #ddd;
-    --primary-color: #2c79ff;
-    --primary-hover-color: #1d70ff;
+    --primary-color: #174248;
+    --primary-hover-color: #174248;
     --text-color: #151515;
     --secondary-color: #f9f9f9;
     --off-btn-bg-color: #fff;
     --off-btn-hover-color: #fff;
     --footer-bg-color: #f1f1f1;
-    --footer-link-color: #2c79ff;
-    --footer-link-hover-color: #1d70ff;
+    --footer-link-color: #174248;
+    --footer-link-hover-color: #174248;
     --white-color: #fff; /* Agregando una variable para el color blanco */
     --panel-color: #fff; /* Agregando una variable para el color blanco */
     --search-color: #f0f0f0;
