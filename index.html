@@ -55,9 +55,7 @@
             <div class="cart-summary">
                 <button id="clear-cart">Borrar Pedido</button>
                 <div>SUBTOTAL: <span id="total-price">$0 CLP</span></div>
-              <button id="checkout" class="button">
-    <a href="https://www.tu-enlace-aqui.com" style="color: inherit; text-decoration: none;">Agendar</a>
-</button>
+                <button id="checkout" class="button"><span>Agendar</span></button>
             </div>
         </section>
     </main>
@@ -73,5 +71,10 @@
 
     <script src="script.js"></script>
     <script src="theme.js"></script>
+    <script>
+        document.getElementById('checkout').onclick = function() {
+            window.location.href = 'https://www.tu-enlace-aqui.com';
+        };
+    </script>
 </body>
 </html>
