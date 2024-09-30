@@ -203,6 +203,7 @@ main {
 
 .category {
     margin-bottom: 20px;
+
 }
 
 .category-btn {
@@ -260,9 +261,17 @@ main {
     transition: all 0.3s ease;
 }
 
+
 .products.open {
     display: block;
+    max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto;  /* Esto habilita el scrollbar en el eje Y */
 }
+
+.products.open::-webkit-scrollbar {
+    display: none; /* Oculta el scrollbar */
+}
+
 
 .products .product {
     display: flex;
@@ -285,8 +294,8 @@ main {
 
 
 .products .product img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin-right: 20px;
     border-radius: 15px 0 0 15px;
 
@@ -306,6 +315,7 @@ main {
     font-size: 1.1rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins */
+    margin-right: 30px;
 
 }
 
