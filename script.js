@@ -1,15 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = {
         'website': [
-            { id: 'PW', name: '"Tu Página Web Profesional en Solo 48 Horas"
-Todo lo que necesitas para tener una web profesional y exitosa:
-
-Portafolio Visual: 10 imágenes personalizadas que muestran lo mejor de tu negocio.
-Misión y Visión: Redacción de la misión y visión de tu empresa para transmitir tus valores.
-Dominio .cl Exclusivo: Tu propio dominio web (www.tunegocio.cl).
-Hosting Anual Incluido: Alojamiento seguro y confiable durante todo un año.
-¡Tu página web online en solo 48 horas!
-Comienza ahora y lleva tu negocio al siguiente nivel. ¡Contáctanos hoy mismo!', price: 199.99, image: 'assets/images/Primera.png', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
+            { id: 'PW', name: 'Tu Página Web Profesional en Solo 48 Horas Todo lo que necesitas para tener una web profesional y exitosa Portafolio Visual 10 imágenes personalizadas que muestran lo mejor de tu negocio Misión y Visión Redacción de la misión y visión de tu empresa para transmitir tus valores Dominio cl Exclusivo Tu propio dominio web (wwwtunegociocl) Hosting Anual Incluido: Alojamiento seguro y confiable durante todo un año ¡Tu página web online en solo 48 horas! Comienza ahora y lleva tu negocio al siguiente nivel ¡Contáctanos hoy mismo!', price: 199.99, image: 'assets/images/Primera.png', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
             { id: 'ACC6R-6G-HIP', name: '"Registro de Usuarios" Login y Acceso con Google', price: 39.99, image: 'assets/images/Segunda.png', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
             { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 49.99, image: 'assets/images/Tercera.png', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] },
             { id: 'FR-100-COR', name: 'Botón de Whatsapp Flotante con Mensaje Personalizado de Empresa', price: 39.99, image: 'assets/images/4.png', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
