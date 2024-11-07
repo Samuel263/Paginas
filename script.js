@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'website': [
             { id: 'PW', name: 'Página Web Informativa: Portafolio de 10 imágenes + elaboración de la Misión y la Visión de tu negocio + Dominio(www.name.cl) + Hosting Anual en 48 Horas', price: 149.99, image: 'assets/images/Primera.png', tags: ['rojo', 'rosas', 'ligero', 'Rosatel'] },
             { id: 'ACC6R-6G-HIP', name: '"Registro de Usuarios" Login y Acceso con Google', price: 39.99, image: 'assets/images/Segunda.png', tags: ['amarillo', 'girasoles', 'mediano', 'Rosatel'] },
-            { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 49.99, image: 'assets/images/3.png', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] },
+            { id: 'ACC-6R-GER-FLO', name: '"Registro de Usuarios" Login y Acceso con Cuenta Personalizada', price: 49.99, image: 'assets/images/Tercera.png', tags: ['blanco', 'rosado', 'flores', 'pesado', 'Rosatel'] },
             { id: 'FR-100-COR', name: 'Botón de Whatsapp Flotante con Mensaje Personalizado de Empresa', price: 39.99, image: 'assets/images/4.png', tags: ['amarillo', 'chocolate', 'dulce', 'cacao', 'ferrero'] },
             { id: 'CHOC-CBCL-120', name: 'Chatbot con Inteligencia Artificial Interacción con Clientes 10 Preguntas', price: 69.99, image: 'assets/images/5.png', tags: ['rojo', 'chocolate', 'amargo', 'cacao', 'bombones'] },
             { id: 'PEL-OSO-V', name: 'Carrito de Compras + Despacho a Domicilio + Botón de Pago (costo asume el cliente)', price: 129.99, image: 'assets/images/6.png', tags: ['blanco', 'felpa', 'suave', 'toy', 'juguete'] },
