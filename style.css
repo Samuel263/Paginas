@@ -285,6 +285,7 @@ main {
     cursor: pointer;
     background-color: var(--darker-color);
     transition: transform 0.3s ease, opacity 0.3s ease;
+    padding: 20px;
 }
 
 .products.open .product:hover {
