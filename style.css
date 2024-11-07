@@ -594,7 +594,7 @@ header nav .off-btn:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 20px;
     border-radius: 15px;
     margin-bottom: 10px;
     cursor: pointer;
